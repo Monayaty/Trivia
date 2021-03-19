@@ -204,7 +204,7 @@ def create_app(test_config=None):
         abort(422)
 
         # game play endpoint
-  @app.route('/play', methods = ['POST'])
+  # @app.route('/play', methods = ['POST'])
   @app.route('/quizzes', methods = ['POST'])
   def gamePlay():
         try:
