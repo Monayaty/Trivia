@@ -80,7 +80,7 @@ def create_app(test_config=None):
 
 
   #creating endpoint for getting categories and questions
-  @app.route('/')
+  # @app.route('/')
   @app.route('/questions')
   @cross_origin()
   def index():
@@ -133,7 +133,7 @@ def create_app(test_config=None):
       db.session.close()
       # add question endpoint
   @app.route('/questions', methods = ['POST'])
-  @app.route('/add', methods=['POST'])
+  # @app.route('/add', methods=['POST'])
   def postQuestion():
       Error = False
       #declare myData object
